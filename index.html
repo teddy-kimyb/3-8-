@@ -11,9 +11,8 @@
   --g9:#04342C;--g7:#0F6E56;--g5:#1D9E75;--g3:#9FE1CB;--g1:#E1F5EE;
   --a5:#EF9F27;--a1:#FAEEDA;--a7:#854F0B;
   --r5:#D85A30;--r1:#FAECE7;--r7:#993C1D;
-  --red:#A32D2D;--red1:#FCEBEB;
-  --b1:#E6F1FB;--b7:#185FA5;
-  --gr5:#5F5E5A;--gr3:#B4B2A9;--gr1:#F1EFE8;
+  --red:#A32D2D;
+  --gr5:#5F5E5A;--gr1:#F1EFE8;
   --ink:#2c2c2a;--white:#fff;
   --border:#d3d1c7;--border-light:#f1efe8;--bg:#f4f3ee;
   --rad:12px;--rad-sm:8px;
@@ -27,7 +26,6 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .hdr-sub{font-size:11px;color:var(--g3);margin-top:1px}
 .scr{padding:18px 16px 90px}
 .hidden{display:none!important}
-/* Buttons */
 .btn-ghost{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:var(--white);padding:5px 12px;border-radius:20px;font-size:11px;font-weight:500;cursor:pointer;font-family:'Noto Sans KR',sans-serif}
 .btn-back{background:none;border:none;color:var(--g3);font-size:12px;font-weight:500;cursor:pointer;font-family:'Noto Sans KR',sans-serif;display:flex;align-items:center;gap:3px;padding:0;margin-bottom:4px}
 .btn-primary{width:100%;background:var(--g9);color:var(--white);border:none;border-radius:var(--rad-sm);padding:13px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Noto Sans KR',sans-serif;margin-top:4px;transition:opacity .15s}
@@ -36,7 +34,6 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)
 .btn-sm{padding:6px 12px;font-size:11px}
 .btn-danger{background:var(--white);color:var(--red);border:1px solid #F09595;border-radius:var(--rad-sm);padding:8px 14px;font-size:12px;cursor:pointer;font-family:'Noto Sans KR',sans-serif}
 .btn-row{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
-/* Forms */
 label{display:block;font-size:11px;font-weight:700;color:var(--gr5);margin-bottom:4px}
 .req::after{content:' *';color:var(--r5)}
 input,select,textarea{width:100%;border:1px solid var(--border);border-radius:var(--rad-sm);padding:9px 11px;font-size:13px;font-family:'Noto Sans KR',sans-serif;background:var(--white);color:var(--ink);outline:none;transition:border .15s;-webkit-appearance:none;appearance:none}
@@ -46,19 +43,16 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .fg{margin-bottom:12px}
 .fr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .hint{font-size:10px;color:#888780;margin-top:3px}
-/* Stats */
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
 .stat-card{background:var(--g1);border-radius:10px;padding:13px 10px;text-align:center}
 .stat-card .sn{font-size:26px;font-weight:900;color:var(--g9);line-height:1}
 .stat-card .sl{font-size:11px;color:var(--g7);margin-top:4px;font-weight:500}
-/* Tabs */
 .tabs-bar{border-bottom:1px solid var(--border-light);display:flex;margin-bottom:14px}
 .tab-btn{padding:9px 14px;border:none;background:none;font-size:12px;font-weight:500;cursor:pointer;color:#888780;border-bottom:2.5px solid transparent;font-family:'Noto Sans KR',sans-serif;transition:all .15s}
 .tab-btn.on{color:var(--g9);border-bottom-color:var(--g9);font-weight:700}
 .slot-tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:13px}
 .stab{padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:var(--white);font-size:11px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-weight:500;color:var(--gr5);transition:all .15s}
 .stab.on{background:var(--g9);color:var(--white);border-color:var(--g9)}
-/* List */
 .sec-lbl{font-size:10px;font-weight:700;color:#888780;text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px}
 .srch{position:relative;margin-bottom:12px}
 .srch input{padding-left:32px}
@@ -67,20 +61,17 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .stu-item:hover{border-color:var(--g7);background:#f4faf8;transform:translateX(2px)}
 .stu-name{font-weight:700;font-size:13px}
 .stu-meta{font-size:11px;color:#888780;margin-top:2px}
-/* Cards */
 .card{background:var(--white);border:1px solid var(--border);border-radius:var(--rad);padding:14px;margin-bottom:12px}
 .card h3{font-size:11px;font-weight:700;color:var(--g7);margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--border-light);letter-spacing:.3px;text-transform:uppercase}
 .irow{display:flex;justify-content:space-between;padding:4px 0;border-bottom:.5px solid var(--border-light)}
 .irow:last-child{border:none}
 .ikey{font-size:11px;color:#888780;flex:1}
 .ival{font-size:12px;font-weight:500;text-align:right;flex:2;word-break:break-all}
-/* Badges */
 .badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px}
 .bg-g{background:var(--g1);color:var(--g7)}
 .bg-a{background:var(--a1);color:var(--a7)}
 .bg-gr{background:var(--gr1);color:var(--gr5)}
 .sbadge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;display:inline-block}
-/* Slot */
 .slot-list{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
 .slot-row{border:1px solid var(--border);border-radius:var(--rad-sm);padding:10px 13px;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:11px}
 .slot-row:hover{border-color:var(--g7);background:#f4faf8}
@@ -91,7 +82,6 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .slot-dept{font-size:11px;color:var(--g7);margin-top:1px}
 .slot-type{font-size:10px;color:#888780;margin-top:1px}
 .slot-empty{font-size:12px;color:#888780}
-/* Uni detail */
 .uni-det{background:#f8fdf9;border:1px solid #c5e8d9;border-radius:10px;padding:13px;margin-bottom:8px;cursor:pointer;transition:all .15s}
 .uni-det:hover{border-color:var(--g5)}
 .uni-det h4{font-size:14px;font-weight:700;color:var(--g9);margin:5px 0 1px}
@@ -103,7 +93,6 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .note-box{background:#fffbf0;border-left:3px solid var(--a5);border-radius:0 6px 6px 0;padding:8px 10px;font-size:11px;color:var(--a7);line-height:1.6;margin-top:8px}
 .cyes{color:var(--red)!important}
 .cno{color:var(--g7)!important}
-/* Modal */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:200;display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .2s ease}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 .sheet{background:var(--white);border-radius:20px 20px 0 0;padding:20px 18px 40px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;animation:slideUp .22s ease;position:relative}
@@ -111,143 +100,32 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .sheet-handle{width:36px;height:3px;background:var(--border);border-radius:2px;margin:0 auto 18px}
 .sheet h3{font-size:16px;font-weight:900;color:var(--g9);margin-bottom:14px;letter-spacing:-.3px}
 .sheet-close{position:absolute;top:14px;right:16px;background:var(--gr1);border:none;font-size:17px;cursor:pointer;color:var(--gr5);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-/* FAB */
 .fab{position:fixed;bottom:26px;right:calc(50% - 222px);background:var(--g9);color:var(--white);border:none;border-radius:50%;width:52px;height:52px;font-size:28px;cursor:pointer;box-shadow:0 6px 24px rgba(4,52,44,.4);display:flex;align-items:center;justify-content:center;z-index:100;transition:transform .15s;font-family:'Noto Sans KR',sans-serif}
 .fab:hover{transform:scale(1.06)}
-/* Toast */
 .toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(8px);background:var(--g9);color:var(--white);padding:9px 18px;border-radius:20px;font-size:12px;font-weight:500;z-index:999;opacity:0;transition:all .25s;white-space:nowrap;pointer-events:none}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
-/* Misc */
 .empty{text-align:center;padding:40px 16px;color:#888780}
 .empty .ei{font-size:40px;margin-bottom:10px}
 .pb-bar{background:var(--border-light);border-radius:3px;height:4px;margin-top:4px;overflow:hidden}
 .pb-fill{background:var(--g5);border-radius:3px;height:100%;transition:width .4s}
 .autosave{font-size:10px;color:var(--g7);margin-top:3px;opacity:0;transition:opacity .3s}
 .autosave.on{opacity:1}
-/* Setup guide */
-.setup-step{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
-.step-num{width:30px;height:30px;border-radius:50%;background:var(--g9);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:2px}
-.step-body h4{font-size:13px;font-weight:700;margin-bottom:5px}
-.step-body p{font-size:12px;color:var(--gr5);line-height:1.7}
-.code-box{background:#1e1e2e;color:#cdd6f4;border-radius:var(--rad-sm);padding:10px 13px;font-size:11px;font-family:monospace;margin-top:8px;line-height:1.8;word-break:break-all}
-.code-box .kw{color:#89b4fa}
-.code-box .str{color:#a6e3a1}
-.code-box .cm{color:#6c7086}
-.warn-box{background:var(--a1);border-left:3px solid var(--a5);border-radius:0 8px 8px 0;padding:11px 14px;font-size:12px;color:var(--a7);line-height:1.6;margin-bottom:16px}
-.info-box{background:var(--g1);border-left:3px solid var(--g7);border-radius:0 8px 8px 0;padding:11px 14px;font-size:12px;color:#085041;line-height:1.6;margin-top:12px}
-.config-input{background:#1e1e2e;border:1px solid #3d3d5c;border-radius:var(--rad-sm);padding:10px 13px;font-size:12px;font-family:monospace;color:#cdd6f4;width:100%;outline:none;margin-top:6px}
-.config-input:focus{border-color:#89b4fa}
 @media(min-width:480px){.fab{right:calc(50% - 216px)}}
 </style>
 </head>
 <body>
 <div class="app" id="app">
 
-<!-- ══════════ 로딩 ══════════ -->
+<!-- 로딩 -->
 <div id="screen-loading">
   <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:14px">
     <div style="font-size:44px">📚</div>
-    <div style="font-size:14px;color:var(--g7);font-weight:700">3학년 8반 진학 상담</div>
-    <div style="font-size:12px;color:#888780" id="loading-msg">연결 중...</div>
+    <div style="font-size:15px;color:var(--g7);font-weight:700">3학년 8반 진학 상담</div>
+    <div style="font-size:12px;color:#888780" id="loading-msg">서버에 연결 중...</div>
   </div>
 </div>
 
-<!-- ══════════ Firebase 설정 가이드 ══════════ -->
-<div id="screen-setup" class="hidden">
-  <div class="hdr"><div class="hdr-row"><div><h1>🔧 Firebase 설정</h1><div class="hdr-sub">최초 1회만 진행하면 됩니다</div></div></div></div>
-  <div class="scr">
-    <div class="warn-box">
-      <b>⚠️ Firebase 설정이 필요합니다</b><br>
-      아래 순서대로 진행 후 설정값을 입력하면 모든 기기에서 데이터가 공유됩니다.
-    </div>
-
-    <div class="card">
-      <h3>📋 설정 순서</h3>
-
-      <div class="setup-step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h4>Firebase 프로젝트 만들기</h4>
-          <p>
-            <a href="https://console.firebase.google.com" target="_blank" style="color:var(--g7);font-weight:700">console.firebase.google.com</a> 접속<br>
-            → Google 계정으로 로그인<br>
-            → <b>"프로젝트 추가"</b> 클릭<br>
-            → 프로젝트 이름: <b>3-8반상담</b> 입력<br>
-            → Google Analytics: <b>사용 안 함</b> 선택<br>
-            → <b>"프로젝트 만들기"</b> 클릭
-          </p>
-        </div>
-      </div>
-
-      <div class="setup-step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h4>Realtime Database 만들기</h4>
-          <p>
-            왼쪽 메뉴 <b>"빌드"</b> → <b>"Realtime Database"</b><br>
-            → <b>"데이터베이스 만들기"</b> 클릭<br>
-            → 위치: <b>미국(기본값)</b> 그대로<br>
-            → 보안 규칙: <b>"테스트 모드로 시작"</b> 선택<br>
-            → <b>"사용 설정"</b> 클릭
-          </p>
-          <div class="info-box">✅ 완료되면 주소창에 <b>https://3-8반상담-default-rtdb.firebaseio.com</b> 형태의 URL이 보입니다. 이게 <b>databaseURL</b> 값입니다.</div>
-        </div>
-      </div>
-
-      <div class="setup-step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h4>웹 앱 등록하기</h4>
-          <p>
-            왼쪽 상단 <b>⚙️ 프로젝트 설정</b> 클릭<br>
-            → 하단 <b>"내 앱"</b> 섹션 → <b>&lt;/&gt;</b> (웹) 아이콘 클릭<br>
-            → 앱 닉네임: <b>상담앱</b> 입력<br>
-            → <b>"앱 등록"</b> 클릭<br>
-            → 화면에 나타나는 <b>firebaseConfig</b> 코드를 복사
-          </p>
-          <div class="code-box">
-            <span class="cm">// 이런 형태의 코드가 나타납니다:</span><br>
-            <span class="kw">const</span> firebaseConfig = {<br>
-            &nbsp;&nbsp;apiKey: <span class="str">"AIzaSy..."</span>,<br>
-            &nbsp;&nbsp;authDomain: <span class="str">"3-8반상담.firebaseapp.com"</span>,<br>
-            &nbsp;&nbsp;databaseURL: <span class="str">"https://...firebaseio.com"</span>,<br>
-            &nbsp;&nbsp;projectId: <span class="str">"3-8반상담"</span>,<br>
-            &nbsp;&nbsp;...<br>
-            };
-          </div>
-        </div>
-      </div>
-
-      <div class="setup-step">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h4>아래에 설정값 입력</h4>
-          <p>복사한 firebaseConfig의 각 값을 아래 입력란에 붙여넣으세요.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 설정값 입력 폼 -->
-    <div class="card">
-      <h3>🔑 Firebase 설정값 입력</h3>
-      <div class="fg"><label class="req">apiKey</label><input class="config-input" id="cfg-apiKey" placeholder="AIzaSy..."></div>
-      <div class="fg"><label class="req">authDomain</label><input class="config-input" id="cfg-authDomain" placeholder="프로젝트명.firebaseapp.com"></div>
-      <div class="fg"><label class="req">databaseURL</label><input class="config-input" id="cfg-databaseURL" placeholder="https://프로젝트명-default-rtdb.firebaseio.com"></div>
-      <div class="fg"><label class="req">projectId</label><input class="config-input" id="cfg-projectId" placeholder="프로젝트명"></div>
-      <div class="fg"><label>storageBucket</label><input class="config-input" id="cfg-storageBucket" placeholder="프로젝트명.appspot.com"></div>
-      <div class="fg"><label>messagingSenderId</label><input class="config-input" id="cfg-messagingSenderId" placeholder="123456789"></div>
-      <div class="fg"><label class="req">appId</label><input class="config-input" id="cfg-appId" placeholder="1:123...:web:abc..."></div>
-      <button class="btn-primary" onclick="saveConfigAndConnect()" style="margin-top:8px">💾 저장하고 연결하기</button>
-      <div class="info-box" style="margin-top:12px">
-        💡 <b>입력한 설정값은 이 기기 브라우저에 저장됩니다.</b><br>
-        다른 기기에서도 처음 접속할 때 이 과정을 한 번씩 진행해야 합니다.<br><br>
-        더 편하게 쓰려면: 설정값을 입력 후 생성된 HTML 파일을 GitHub에 다시 업로드하면 이후엔 설정 없이 바로 사용 가능합니다.
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════ 로그인 ══════════ -->
+<!-- 로그인 -->
 <div id="screen-login" class="hidden">
   <div class="scr" style="padding-top:0">
     <div style="text-align:center;padding:32px 0 22px">
@@ -257,34 +135,42 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
     </div>
     <div class="card" style="padding:20px">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px">
-        <button class="role-card on" onclick="selRole('teacher')" id="rc-t" style="border:2px solid var(--border);background:var(--white);border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;transition:all .15s;font-family:'Noto Sans KR',sans-serif">
+        <button onclick="selRole('teacher')" id="rc-t" style="border:2px solid var(--g7);background:var(--g1);border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:'Noto Sans KR',sans-serif">
           <span style="font-size:26px;display:block;margin-bottom:6px">👩‍🏫</span>
           <div style="font-size:13px;font-weight:700">담임교사</div>
           <div style="font-size:11px;color:#888780;margin-top:2px">전체 관리</div>
         </button>
-        <button class="role-card" onclick="selRole('student')" id="rc-s" style="border:2px solid var(--border);background:var(--white);border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;transition:all .15s;font-family:'Noto Sans KR',sans-serif">
+        <button onclick="selRole('student')" id="rc-s" style="border:2px solid var(--border);background:var(--white);border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:'Noto Sans KR',sans-serif">
           <span style="font-size:26px;display:block;margin-bottom:6px">🎓</span>
           <div style="font-size:13px;font-weight:700">학생</div>
           <div style="font-size:11px;color:#888780;margin-top:2px">내 상담 확인</div>
         </button>
       </div>
       <div id="g-pw">
-        <div class="fg"><label>담임교사 비밀번호</label><input type="password" id="tpw" placeholder="비밀번호 입력" autocomplete="current-password"><div class="hint">초기 비밀번호: 1234</div></div>
+        <div class="fg">
+          <label>담임교사 비밀번호</label>
+          <input type="password" id="tpw" placeholder="비밀번호 입력" autocomplete="current-password">
+          <div class="hint">초기 비밀번호: 1234</div>
+        </div>
       </div>
       <div id="g-stu" class="hidden">
         <div class="fg"><label>학번</label><input type="text" id="sid" placeholder="예: 30801" inputmode="numeric" maxlength="8"></div>
-        <div class="fg"><label>비밀번호</label><input type="password" id="spw" placeholder="생년월일 6자리 (예: 061015)" autocomplete="current-password"><div class="hint">초기 비밀번호는 생년월일 6자리</div></div>
+        <div class="fg">
+          <label>비밀번호</label>
+          <input type="password" id="spw" placeholder="생년월일 6자리 (예: 061015)" autocomplete="current-password">
+          <div class="hint">초기 비밀번호는 학번과 동일합니다</div>
+        </div>
       </div>
       <button class="btn-primary" onclick="doLogin()">로그인</button>
     </div>
     <div style="margin-top:12px;background:var(--g1);border-radius:10px;padding:11px 13px">
       <p style="font-size:11px;color:var(--g7);font-weight:700;margin-bottom:3px">✅ 실시간 공유 활성화</p>
-      <p style="font-size:11px;color:#085041;line-height:1.6">모든 기기에서 동일한 데이터를 실시간으로 공유합니다.</p>
+      <p style="font-size:11px;color:#085041;line-height:1.6">모든 기기에서 동일한 데이터를 실시간으로 공유합니다.<br>이 URL을 카카오톡으로 학생들과 공유하세요.</p>
     </div>
   </div>
 </div>
 
-<!-- ══════════ 담임 대시보드 ══════════ -->
+<!-- 담임 대시보드 -->
 <div id="screen-teacher" class="hidden">
   <div class="hdr">
     <div class="hdr-row">
@@ -313,11 +199,12 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
       </div>
       <div class="card">
         <h3>🔑 학생 비밀번호 일괄 설정</h3>
+        <p style="font-size:11px;color:#888780;margin-bottom:10px">현재 초기 비밀번호는 각 학생의 <b>학번</b>입니다</p>
         <div class="fg">
-          <label>비밀번호 형식</label>
+          <label>변경 형식</label>
           <select id="pw-fmt" onchange="document.getElementById('pw-cg').classList.toggle('hidden',this.value!=='custom')">
-            <option value="id">학번 (기본값)</option>
-            <option value="custom">직접 입력</option>
+            <option value="id">학번 유지 (기본)</option>
+            <option value="custom">공통 비밀번호로 변경</option>
           </select>
         </div>
         <div class="fg hidden" id="pw-cg"><label>공통 비밀번호</label><input type="text" id="pw-cv" placeholder="예: 8반1234"></div>
@@ -325,20 +212,15 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
       </div>
       <div class="card">
         <h3>📥 데이터 백업</h3>
-        <p style="font-size:11px;color:#888780;margin-bottom:10px">Firebase 데이터를 JSON으로 내보냅니다</p>
+        <p style="font-size:11px;color:#888780;margin-bottom:10px">전체 상담 데이터를 JSON으로 내보냅니다</p>
         <button class="btn-save" onclick="exportAll()">JSON 내보내기</button>
-      </div>
-      <div class="card">
-        <h3>⚙️ Firebase 재설정</h3>
-        <p style="font-size:11px;color:#888780;margin-bottom:10px">Firebase 설정값을 변경합니다</p>
-        <button class="btn-danger" onclick="resetConfig()">설정 초기화</button>
       </div>
     </div>
   </div>
   <button class="fab" onclick="showAddStu()">+</button>
 </div>
 
-<!-- ══════════ 학생 상세 (담임) ══════════ -->
+<!-- 학생 상세 (담임) -->
 <div id="screen-detail" class="hidden">
   <div class="hdr">
     <div class="hdr-row">
@@ -369,7 +251,7 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
   </div>
 </div>
 
-<!-- ══════════ 학생 화면 ══════════ -->
+<!-- 학생 화면 -->
 <div id="screen-student" class="hidden">
   <div class="hdr">
     <div class="hdr-row">
@@ -393,7 +275,11 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
     </div>
     <div id="st-memo" class="hidden">
       <div class="card"><h3>📌 담임 상담 메모</h3><div id="s-tmemo" style="font-size:12px;line-height:1.75;white-space:pre-wrap;min-height:40px"></div></div>
-      <div class="card"><h3>✏️ 나의 메모</h3><textarea id="s-omemo" rows="5" placeholder="나의 진학 준비 상황, 목표, 고민 등 (자동 저장)" oninput="sMemoDebounce()"></textarea><div class="autosave" id="smemo-saved">✓ 저장됨</div></div>
+      <div class="card">
+        <h3>✏️ 나의 메모</h3>
+        <textarea id="s-omemo" rows="5" placeholder="나의 진학 준비 상황, 목표, 고민 등 (자동 저장)" oninput="sMemoDebounce()"></textarea>
+        <div class="autosave" id="smemo-saved">✓ 저장됨</div>
+      </div>
     </div>
     <div id="st-profile" class="hidden">
       <div class="card"><h3>📋 내 정보</h3><div id="s-pinfo"></div></div>
@@ -401,23 +287,32 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
   </div>
 </div>
 
-<!-- ══════════ Modal: 학생 추가/수정 ══════════ -->
+<!-- Modal: 학생 추가/수정 -->
 <div id="modal-stu" class="overlay hidden" onclick="ovClose(event,'modal-stu')">
   <div class="sheet">
     <div class="sheet-handle"></div>
     <button class="sheet-close" onclick="closeM('modal-stu')">×</button>
     <h3 id="ms-title">학생 추가</h3>
-    <div class="fr"><div class="fg"><label class="req">이름</label><input id="a-name" placeholder="홍길동"></div><div class="fg"><label class="req">학번</label><input id="a-id" placeholder="30801" inputmode="numeric" maxlength="8"></div></div>
-    <div class="fr"><div class="fg"><label>번호</label><input type="number" id="a-num" placeholder="1" min="1" max="50"></div><div class="fg"><label>성별</label><select id="a-gender"><option value="">선택</option><option value="남">남</option><option value="여">여</option></select></div></div>
-    <div class="fg"><label>비밀번호</label><input id="a-pw" placeholder="생년월일 6자리 (미입력 시 학번)"><div class="hint">학생이 앱 로그인할 때 사용합니다</div></div>
-    <div class="fr"><div class="fg"><label>내신 등급</label><input type="number" id="a-grade" placeholder="2.5" step="0.01" min="1" max="9"></div><div class="fg"><label>계열</label><select id="a-track"><option value="">선택</option><option>문과</option><option>이과</option><option>예체능</option></select></div></div>
+    <div class="fr">
+      <div class="fg"><label class="req">이름</label><input id="a-name" placeholder="홍길동"></div>
+      <div class="fg"><label class="req">학번</label><input id="a-id" placeholder="30801" inputmode="numeric" maxlength="8"></div>
+    </div>
+    <div class="fr">
+      <div class="fg"><label>번호</label><input type="number" id="a-num" placeholder="1" min="1" max="50"></div>
+      <div class="fg"><label>성별</label><select id="a-gender"><option value="">선택</option><option value="남">남</option><option value="여">여</option></select></div>
+    </div>
+    <div class="fg"><label>비밀번호</label><input id="a-pw" placeholder="미입력 시 학번으로 자동 설정"><div class="hint">학생이 앱 로그인할 때 사용합니다</div></div>
+    <div class="fr">
+      <div class="fg"><label>내신 등급</label><input type="number" id="a-grade" placeholder="2.5" step="0.01" min="1" max="9"></div>
+      <div class="fg"><label>계열</label><select id="a-track"><option value="">선택</option><option>문과</option><option>이과</option><option>예체능</option></select></div>
+    </div>
     <div class="fg"><label>모의고사 성적</label><input id="a-mock" placeholder="국어3 수학2 영어2 탐구3"></div>
     <div class="fg"><label>비고</label><textarea id="a-note" rows="2" placeholder="특기사항 등"></textarea></div>
     <button class="btn-primary" id="ms-btn" onclick="saveStu()">저장</button>
   </div>
 </div>
 
-<!-- ══════════ Modal: 대학 입력 ══════════ -->
+<!-- Modal: 대학 입력 -->
 <div id="modal-uni" class="overlay hidden" onclick="ovClose(event,'modal-uni')">
   <div class="sheet">
     <div class="sheet-handle"></div>
@@ -434,17 +329,29 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
         <button class="stab" onclick="selSlot(5,this)">6번</button>
       </div>
     </div>
-    <div class="fr"><div class="fg"><label class="req">대학명</label><input id="u-name" placeholder="서울대학교"></div><div class="fg"><label class="req">학과/전공</label><input id="u-dept" placeholder="컴퓨터공학과"></div></div>
+    <div class="fr">
+      <div class="fg"><label class="req">대학명</label><input id="u-name" placeholder="서울대학교"></div>
+      <div class="fg"><label class="req">학과/전공</label><input id="u-dept" placeholder="컴퓨터공학과"></div>
+    </div>
     <div class="fr">
       <div class="fg"><label>전형 구분</label><select id="u-type"><option value="">선택</option><option>수시</option><option>정시</option><option>편입</option></select></div>
       <div class="fg"><label>세부 전형</label><select id="u-sub"><option value="">선택</option><optgroup label="수시"><option>학생부교과</option><option>학생부종합</option><option>논술</option><option>실기/실적</option></optgroup><optgroup label="정시"><option>수능(가군)</option><option>수능(나군)</option><option>수능(다군)</option></optgroup><optgroup label="특별"><option>기회균형</option><option>사회배려자</option><option>농어촌</option><option>특기자</option></optgroup></select></div>
     </div>
     <div class="fg"><label>전형명 (공식 명칭)</label><input id="u-aname" placeholder="지역균형선발, 일반전형 등"></div>
-    <div class="fr"><div class="fg"><label>모집 인원</label><input type="number" id="u-quota" placeholder="30"></div><div class="fg"><label>경쟁률</label><input id="u-ratio" placeholder="12.5:1"></div></div>
+    <div class="fr">
+      <div class="fg"><label>모집 인원</label><input type="number" id="u-quota" placeholder="30"></div>
+      <div class="fg"><label>경쟁률</label><input id="u-ratio" placeholder="12.5:1"></div>
+    </div>
     <div class="fg"><label>커트라인 / 합격선</label><input id="u-cut" placeholder="내신 1.8등급 / 수능 298점"></div>
-    <div class="fr"><div class="fg"><label>수능 최저 여부</label><select id="u-cmin"><option value="">선택</option><option>있음</option><option>없음</option></select></div><div class="fg"><label>수능 최저 기준</label><input id="u-cstd" placeholder="2합5, 영어2"></div></div>
+    <div class="fr">
+      <div class="fg"><label>수능 최저 여부</label><select id="u-cmin"><option value="">선택</option><option>있음</option><option>없음</option></select></div>
+      <div class="fg"><label>수능 최저 기준</label><input id="u-cstd" placeholder="2합5, 영어2"></div>
+    </div>
     <div class="fg"><label>평가 요소 / 반영 비율</label><input id="u-eval" placeholder="학생부70% + 면접30%"></div>
-    <div class="fr"><div class="fg"><label>원서 접수</label><input id="u-period" placeholder="9/9~9/13"></div><div class="fg"><label>발표 / 면접일</label><input id="u-ann" placeholder="12/13"></div></div>
+    <div class="fr">
+      <div class="fg"><label>원서 접수</label><input id="u-period" placeholder="9/9~9/13"></div>
+      <div class="fg"><label>발표 / 면접일</label><input id="u-ann" placeholder="12/13"></div>
+    </div>
     <div class="fg"><label>메모</label><textarea id="u-memo" rows="2" placeholder="준비 현황, 특이사항 등"></textarea></div>
     <div class="btn-row">
       <button class="btn-danger hidden" id="u-del" onclick="delUni()">삭제</button>
@@ -456,16 +363,26 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 <div class="toast" id="toast"></div>
 </div>
 
-<!-- ══════════ Firebase SDK (동적 로드) ══════════ -->
-<script type="module" id="firebase-loader">
-// Firebase 설정을 localStorage에서 읽어 동적으로 연결합니다
-const CFG_KEY = 'fb_cfg_38';
+<script type="module">
+import { initializeApp }                              from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, set, get, onValue }        from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-const SCOLORS=['#993C1D','#854F0B','#0F6E56','#185FA5','#3B6D11','#5F5E5A'];
-const SBGS   =['#FAECE7','#FAEEDA','#E1F5EE','#E6F1FB','#EAF3DE','#F1EFE8'];
-const SLABELS=['1번','2번','3번','4번','5번','6번'];
+/* ★★★ Firebase 설정 (class8-univ) ★★★ */
+const firebaseConfig = {
+  apiKey:            "AIzaSyDfgQHLY4quAlP1ggEd-EDR-Vwz8Sq1CYE",
+  authDomain:        "cbh-class8-uni.firebaseapp.com",
+  databaseURL:       "https://cbh-class8-uni-default-rtdb.firebaseio.com",
+  projectId:         "cbh-class8-uni",
+  storageBucket:     "cbh-class8-uni.firebasestorage.app",
+  messagingSenderId: "1095426333428",
+  appId:             "1:1095426333428:web:aaaf2890353d865a171ca1"
+};
 
-const ROSTER=[
+const app = initializeApp(firebaseConfig);
+const db  = getDatabase(app);
+
+/* ─── 명단 ─── */
+const ROSTER = [
   {id:'30801',name:'강나형',num:1},{id:'30802',name:'구민혁',num:2},
   {id:'30803',name:'권윤주',num:3},{id:'30804',name:'김가은',num:4},
   {id:'30805',name:'김규성',num:5},{id:'30806',name:'김민솔',num:6},
@@ -484,288 +401,248 @@ const ROSTER=[
   {id:'30831',name:'최혜성',num:31}
 ];
 
-/* ── 상태 ── */
-let role=null,curStu=null,curSlot=0,editStu=false;
-let students={},teacherPw='1234';
-let memoT=null,sMemoT=null;
-let db,dbRef,dbSet,dbGet,dbUpdate,dbOnValue;
+const SCOLORS = ['#993C1D','#854F0B','#0F6E56','#185FA5','#3B6D11','#5F5E5A'];
+const SBGS    = ['#FAECE7','#FAEEDA','#E1F5EE','#E6F1FB','#EAF3DE','#F1EFE8'];
+const SLABELS = ['1번','2번','3번','4번','5번','6번'];
 
-/* ── 유틸 ── */
-function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-function $id(id){return document.getElementById(id);}
-function show(id){$id(id).classList.remove('hidden');}
-function hide(id){$id(id).classList.add('hidden');}
+/* ─── 상태 ─── */
+let role=null, curStu=null, curSlot=0, editStu=false;
+let students={}, teacherPw='1234';
+let memoT=null, sMemoT=null;
+
+/* ─── 유틸 ─── */
+const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const $   = id => document.getElementById(id);
+const show= id => $(id).classList.remove('hidden');
+const hide= id => $(id).classList.add('hidden');
 function showScr(id){
-  ['screen-loading','screen-setup','screen-login','screen-teacher','screen-detail','screen-student'].forEach(s=>hide(s));
+  ['screen-loading','screen-login','screen-teacher','screen-detail','screen-student'].forEach(s=>hide(s));
   show(id); window.scrollTo(0,0);
 }
 function toast(msg){
-  const t=$id('toast'); t.textContent=msg; t.classList.add('on');
+  const t=$('toast'); t.textContent=msg; t.classList.add('on');
   setTimeout(()=>t.classList.remove('on'),2400);
 }
-function closeM(id){hide(id);}
-function ovClose(e,id){if(e.target.id===id)closeM(id);}
+const closeM  = id => hide(id);
+const ovClose = (e,id) => { if(e.target.id===id) closeM(id); };
 
-/* ── Firebase 설정 저장/불러오기 ── */
-function saveConfigAndConnect(){
-  const cfg={
-    apiKey:$id('cfg-apiKey').value.trim(),
-    authDomain:$id('cfg-authDomain').value.trim(),
-    databaseURL:$id('cfg-databaseURL').value.trim(),
-    projectId:$id('cfg-projectId').value.trim(),
-    storageBucket:$id('cfg-storageBucket').value.trim(),
-    messagingSenderId:$id('cfg-messagingSenderId').value.trim(),
-    appId:$id('cfg-appId').value.trim()
-  };
-  if(!cfg.apiKey||!cfg.databaseURL||!cfg.projectId){
-    toast('❌ apiKey, databaseURL, projectId는 필수입니다'); return;
-  }
-  localStorage.setItem(CFG_KEY, JSON.stringify(cfg));
-  toast('✅ 저장됨 — Firebase에 연결합니다...');
-  setTimeout(()=>location.reload(), 1200);
+/* ─── Firebase 저장 ─── */
+async function saveToDb(sid){
+  try{ await set(ref(db,'students/'+sid), students[sid]); return true; }
+  catch(e){ toast('❌ 저장 실패: '+e.message); return false; }
 }
-window.saveConfigAndConnect = saveConfigAndConnect;
+async function savePwDb(){ try{ await set(ref(db,'teacherPw'), teacherPw); }catch(e){} }
 
-function resetConfig(){
-  if(!confirm('Firebase 설정을 초기화할까요?'))return;
-  localStorage.removeItem(CFG_KEY);
-  location.reload();
-}
-window.resetConfig = resetConfig;
-
-/* ── Firebase 연결 ── */
-async function connectFirebase(cfg){
-  const {initializeApp}   = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js");
-  const {getDatabase,ref,set,get,update,onValue} = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js");
-  const app = initializeApp(cfg);
-  db        = getDatabase(app);
-  dbRef     = ref; dbSet=set; dbGet=get; dbUpdate=update; dbOnValue=onValue;
-}
-
-/* ── 데이터 로드 ── */
+/* ─── 데이터 로드 & 명단 씨드 ─── */
 async function loadAll(){
+  $('loading-msg').textContent = 'Firebase에서 데이터 불러오는 중...';
   try{
-    $id('loading-msg').textContent='Firebase에서 데이터 불러오는 중...';
-    const snap = await dbGet(dbRef(db,'/'));
+    const snap = await get(ref(db,'/'));
     if(snap.exists()){
-      const v=snap.val();
-      teacherPw = v.teacherPw||'1234';
-      students  = v.students ||{};
+      const v = snap.val();
+      teacherPw = v.teacherPw || '1234';
+      students  = v.students  || {};
     }
-    // 명단 씨드
-    let changed=false;
+    let changed = false;
     ROSTER.forEach(r=>{
       if(!students[r.id]){
-        students[r.id]={...r,pw:r.id,gender:'',track:'',grade:'',mock:'',note:'',unis:Array(6).fill(null),teacherMemo:'',ownMemo:''};
-        changed=true;
+        students[r.id] = {...r, pw:r.id, gender:'', track:'', grade:'', mock:'', note:'',
+          unis: Array(6).fill(null), teacherMemo:'', ownMemo:''};
+        changed = true;
       } else {
-        if(!Array.isArray(students[r.id].unis)){students[r.id].unis=Array(6).fill(null);changed=true;}
-        while(students[r.id].unis.length<6){students[r.id].unis.push(null);changed=true;}
+        if(!Array.isArray(students[r.id].unis)){ students[r.id].unis=Array(6).fill(null); changed=true; }
+        while(students[r.id].unis.length<6){ students[r.id].unis.push(null); changed=true; }
       }
     });
-    if(changed) await dbSet(dbRef(db,'/'),{teacherPw,students});
-    return true;
+    if(changed) await set(ref(db,'/'), {teacherPw, students});
   } catch(e){
-    console.error(e);
-    return false;
+    toast('❌ Firebase 연결 실패: '+e.message);
   }
 }
 
-/* ── 실시간 동기화 ── */
+/* ─── 실시간 동기화 ─── */
 function startSync(){
-  dbOnValue(dbRef(db,'students'),snap=>{
-    if(!snap.exists())return;
-    const fresh=snap.val();
-    Object.assign(students,fresh);
-    // 현재 화면 갱신
-    if(role==='teacher'&&$id('screen-teacher').offsetParent){renderStats();renderList();}
-    if(role==='teacher'&&curStu&&$id('screen-detail').offsetParent){
-      curStu=students[curStu.id];
-      renderDInfo();renderDSlots();renderDUniDetail();
-      $id('t-memo').value=curStu.teacherMemo||'';
+  onValue(ref(db,'students'), snap=>{
+    if(!snap.exists()) return;
+    Object.assign(students, snap.val());
+    if(role==='teacher' && $('screen-teacher').offsetParent){ renderStats(); renderList(); }
+    if(role==='teacher' && curStu && $('screen-detail').offsetParent){
+      curStu = students[curStu.id];
+      renderDInfo(); renderDSlots(); renderDUniDetail();
+      $('t-memo').value = curStu.teacherMemo||'';
     }
-    if(role==='student'&&curStu&&$id('screen-student').offsetParent){
-      curStu=students[curStu.id];
-      renderSlotList('s-slots');renderUniDetail('s-uni-detail');
-      const tm=$id('s-tmemo');
-      tm.textContent=curStu.teacherMemo?.trim()?curStu.teacherMemo:'(담임 상담 메모 없음)';
-      tm.style.color=curStu.teacherMemo?.trim()?'var(--ink)':'#888780';
+    if(role==='student' && curStu && $('screen-student').offsetParent){
+      curStu = students[curStu.id];
+      renderSlotList('s-slots'); renderUniDetail('s-uni-detail');
+      const tm=$('s-tmemo');
+      tm.textContent = curStu.teacherMemo?.trim() ? curStu.teacherMemo : '(담임 상담 메모 없음)';
+      tm.style.color = curStu.teacherMemo?.trim() ? 'var(--ink)' : '#888780';
     }
   });
 }
 
-/* ── Firebase에 학생 저장 ── */
-async function saveToDb(sid){
-  try{
-    await dbSet(dbRef(db,'students/'+sid),students[sid]);
-    return true;
-  }catch(e){toast('❌ 저장 실패: '+e.message);return false;}
-}
-async function savePwDb(){
-  try{await dbSet(dbRef(db,'teacherPw'),teacherPw);}catch(e){}
-}
-
-/* ════ 앱 시작 ════ */
-(async ()=>{
-  showScr('screen-loading');
-  const saved = localStorage.getItem(CFG_KEY);
-  if(!saved){
-    showScr('screen-setup'); return;
-  }
-  let cfg;
-  try{ cfg=JSON.parse(saved); }catch(e){ showScr('screen-setup'); return; }
-
-  try{
-    await connectFirebase(cfg);
-    const ok = await loadAll();
-    if(!ok){ toast('❌ Firebase 연결 실패. 설정을 확인하세요.'); showScr('screen-setup'); return; }
-    startSync();
-    selRole('teacher');
-    showScr('screen-login');
-  } catch(e){
-    console.error(e);
-    toast('❌ Firebase 오류: '+e.message);
-    showScr('screen-setup');
-  }
-})();
+/* ─── 앱 시작 ─── */
+await loadAll();
+startSync();
+selRole('teacher');
+showScr('screen-login');
 
 /* ════ 로그인 ════ */
 function selRole(r){
-  role=r;
-  $id('rc-t').style.cssText=r==='teacher'?'border:2px solid #0F6E56;background:#E1F5EE;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif':'border:2px solid #d3d1c7;background:#fff;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif';
-  $id('rc-s').style.cssText=r==='student'?'border:2px solid #0F6E56;background:#E1F5EE;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif':'border:2px solid #d3d1c7;background:#fff;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif';
-  $id('g-pw').classList.toggle('hidden',r!=='teacher');
-  $id('g-stu').classList.toggle('hidden',r!=='student');
+  role = r;
+  $('rc-t').style.cssText = r==='teacher'
+    ? 'border:2px solid #0F6E56;background:#E1F5EE;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif'
+    : 'border:2px solid #d3d1c7;background:#fff;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif';
+  $('rc-s').style.cssText = r==='student'
+    ? 'border:2px solid #0F6E56;background:#E1F5EE;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif'
+    : 'border:2px solid #d3d1c7;background:#fff;border-radius:10px;padding:16px 8px;cursor:pointer;text-align:center;font-family:Noto Sans KR,sans-serif';
+  $('g-pw').classList.toggle('hidden', r!=='teacher');
+  $('g-stu').classList.toggle('hidden', r!=='student');
 }
-window.selRole=selRole;
+window.selRole = selRole;
 
 function doLogin(){
   if(role==='teacher'){
-    if($id('tpw').value!==teacherPw){toast('❌ 비밀번호가 틀렸습니다');return;}
+    if($('tpw').value !== teacherPw){ toast('❌ 비밀번호가 틀렸습니다'); return; }
     showTeacher();
   } else {
-    const sid=$id('sid').value.trim(), spw=$id('spw').value.trim();
-    const s=students[sid];
-    if(!s){toast('❌ 학번을 찾을 수 없습니다');return;}
-    if(spw!==(s.pw||s.id)){toast('❌ 비밀번호가 틀렸습니다');return;}
-    curStu=s; showStudentScr();
+    const sid=$('sid').value.trim(), spw=$('spw').value.trim();
+    const s = students[sid];
+    if(!s){ toast('❌ 학번을 찾을 수 없습니다'); return; }
+    if(spw !== (s.pw||s.id)){ toast('❌ 비밀번호가 틀렸습니다'); return; }
+    curStu = s; showStudentScr();
   }
 }
-window.doLogin=doLogin;
+window.doLogin = doLogin;
 
 function logout(){
-  role=null;curStu=null;
-  $id('tpw').value='';$id('sid').value='';$id('spw').value='';
+  role=null; curStu=null;
+  $('tpw').value=''; $('sid').value=''; $('spw').value='';
   showScr('screen-login');
 }
-window.logout=logout;
+window.logout = logout;
 
 /* ════ 담임 대시보드 ════ */
-function showTeacher(){renderStats();renderList();showScr('screen-teacher');}
+function showTeacher(){ renderStats(); renderList(); showScr('screen-teacher'); }
 
 function renderStats(){
-  const list=Object.values(students);
-  const tot=list.length;
-  const has=list.filter(s=>s.unis?.some(u=>u?.name)).length;
-  const full=list.filter(s=>s.unis?.filter(u=>u?.name).length>=6).length;
-  const memo=list.filter(s=>s.teacherMemo?.trim()).length;
-  const pct=tot>0?Math.round(memo/tot*100):0;
-  $id('t-sub').textContent='담임 대시보드 · '+tot+'명';
-  $id('t-stats').innerHTML=`
+  const list = Object.values(students);
+  const tot  = list.length;
+  const has  = list.filter(s=>s.unis?.some(u=>u?.name)).length;
+  const full = list.filter(s=>s.unis?.filter(u=>u?.name).length>=6).length;
+  const memo = list.filter(s=>s.teacherMemo?.trim()).length;
+  const pct  = tot>0 ? Math.round(memo/tot*100) : 0;
+  $('t-sub').textContent = '담임 대시보드 · '+tot+'명';
+  $('t-stats').innerHTML = `
     <div class="stat-card"><div class="sn">${tot}</div><div class="sl">전체 학생</div></div>
     <div class="stat-card"><div class="sn">${has}</div><div class="sl">대학 등록 시작</div></div>
     <div class="stat-card"><div class="sn">${full}</div><div class="sl">6개 완료</div></div>
-    <div class="stat-card"><div class="sn">${memo}</div><div class="sl">상담 완료<div class="pb-bar"><div class="pb-fill" style="width:${pct}%"></div></div></div></div>`;
+    <div class="stat-card"><div class="sn">${memo}</div><div class="sl">상담 완료
+      <div class="pb-bar"><div class="pb-fill" style="width:${pct}%"></div></div>
+    </div></div>`;
 }
 
-function filterStu(q){renderList(q);}
-window.filterStu=filterStu;
+function filterStu(q){ renderList(q); }
+window.filterStu = filterStu;
 
 function renderList(q=''){
-  const c=$id('stu-list');
-  let list=Object.values(students);
-  if(q){const lq=q.toLowerCase();list=list.filter(s=>s.name.includes(lq)||s.id.includes(lq)||String(s.num||'').includes(lq));}
+  const c = $('stu-list');
+  let list = Object.values(students);
+  if(q){ const lq=q.toLowerCase(); list=list.filter(s=>s.name.includes(lq)||s.id.includes(lq)||String(s.num||'').includes(lq)); }
   list.sort((a,b)=>(parseInt(a.num)||99)-(parseInt(b.num)||99));
-  if(!list.length){c.innerHTML='<div class="empty"><div class="ei">📭</div><p>검색 결과 없음</p></div>';return;}
-  c.innerHTML=list.map(s=>{
-    const f=s.unis?.filter(u=>u?.name).length||0;
-    const hasMemo=s.teacherMemo?.trim();
-    const bdg=hasMemo?'<span class="badge bg-g">상담완료</span>':f>0?`<span class="badge bg-a">${f}/6</span>`:'<span class="badge bg-gr">미입력</span>';
-    return`<div class="stu-item" onclick="openDetail('${s.id}')">
-      <div><div class="stu-name">${s.num}번 <b>${esc(s.name)}</b> <span style="font-size:10px;color:#888780;font-weight:400">${s.id}</span></div>
-      <div class="stu-meta">희망대학 ${f}/6개 ${bdg}</div></div>
-      <div style="display:flex;align-items:center;gap:5px">${f>0?`<span class="badge bg-g">${f}개</span>`:''}<span style="color:#d3d1c7;font-size:20px">›</span></div>
+  if(!list.length){ c.innerHTML='<div class="empty"><div class="ei">📭</div><p>검색 결과 없음</p></div>'; return; }
+  c.innerHTML = list.map(s=>{
+    const f = s.unis?.filter(u=>u?.name).length||0;
+    const hasMemo = s.teacherMemo?.trim();
+    const bdg = hasMemo ? '<span class="badge bg-g">상담완료</span>'
+              : f>0    ? `<span class="badge bg-a">${f}/6</span>`
+              :           '<span class="badge bg-gr">미입력</span>';
+    return `<div class="stu-item" onclick="openDetail('${s.id}')">
+      <div>
+        <div class="stu-name">${s.num}번 <b>${esc(s.name)}</b> <span style="font-size:10px;color:#888780;font-weight:400">${s.id}</span></div>
+        <div class="stu-meta">희망대학 ${f}/6개 ${bdg}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:5px">
+        ${f>0?`<span class="badge bg-g">${f}개</span>`:''}
+        <span style="color:#d3d1c7;font-size:20px">›</span>
+      </div>
     </div>`;
   }).join('');
 }
 
 function swTTab(t,el){
-  document.querySelectorAll('#screen-teacher .tab-btn').forEach(b=>b.classList.remove('on'));el.classList.add('on');
-  hide('tt-list');hide('tt-settings');show('tt-'+t);
+  document.querySelectorAll('#screen-teacher .tab-btn').forEach(b=>b.classList.remove('on')); el.classList.add('on');
+  hide('tt-list'); hide('tt-settings'); show('tt-'+t);
 }
-window.swTTab=swTTab;
+window.swTTab = swTTab;
 
 /* ════ 학생 상세 ════ */
 function openDetail(sid){
-  curStu=students[sid];if(!curStu)return;
-  $id('d-name').textContent=curStu.name+' 학생';
-  renderDInfo();renderDSlots();renderDUniDetail();
-  $id('t-memo').value=curStu.teacherMemo||'';
+  curStu = students[sid]; if(!curStu) return;
+  $('d-name').textContent = curStu.name+' 학생';
+  renderDInfo(); renderDSlots(); renderDUniDetail();
+  $('t-memo').value = curStu.teacherMemo||'';
   showScr('screen-detail');
 }
-window.openDetail=openDetail;
+window.openDetail = openDetail;
 
 function renderDInfo(){
-  const s=curStu;
-  $id('d-info').innerHTML=`
+  const s = curStu;
+  $('d-info').innerHTML = `
     <div class="irow"><span class="ikey">학번</span><span class="ival">${s.id}</span></div>
     <div class="irow"><span class="ikey">번호</span><span class="ival">${s.num}번</span></div>
-    ${s.gender?`<div class="irow"><span class="ikey">성별</span><span class="ival">${s.gender}</span></div>`:''}
-    ${s.track?`<div class="irow"><span class="ikey">계열</span><span class="ival">${s.track}</span></div>`:''}
-    ${s.grade?`<div class="irow"><span class="ikey">내신</span><span class="ival">${s.grade}등급</span></div>`:''}
-    ${s.mock?`<div class="irow"><span class="ikey">모의고사</span><span class="ival">${esc(s.mock)}</span></div>`:''}
-    ${s.note?`<div class="irow"><span class="ikey">비고</span><span class="ival">${esc(s.note)}</span></div>`:''}`;
+    ${s.gender ? `<div class="irow"><span class="ikey">성별</span><span class="ival">${s.gender}</span></div>` : ''}
+    ${s.track  ? `<div class="irow"><span class="ikey">계열</span><span class="ival">${s.track}</span></div>`  : ''}
+    ${s.grade  ? `<div class="irow"><span class="ikey">내신</span><span class="ival">${s.grade}등급</span></div>` : ''}
+    ${s.mock   ? `<div class="irow"><span class="ikey">모의고사</span><span class="ival">${esc(s.mock)}</span></div>` : ''}
+    ${s.note   ? `<div class="irow"><span class="ikey">비고</span><span class="ival">${esc(s.note)}</span></div>` : ''}`;
 }
 
 function renderDSlots(){
-  const f=curStu.unis?.filter(u=>u?.name).length||0;
-  $id('d-cnt').innerHTML=f>0?`<span class="badge bg-g">${f}/6개</span>`:'';
+  const f = curStu.unis?.filter(u=>u?.name).length||0;
+  $('d-cnt').innerHTML = f>0 ? `<span class="badge bg-g">${f}/6개</span>` : '';
   renderSlotList('d-slots');
 }
 
 function renderSlotList(cid){
-  const c=$id(cid);
-  const unis=curStu.unis||Array(6).fill(null);
-  c.innerHTML=unis.map((u,i)=>{
-    if(u?.name){
-      return`<div class="slot-row filled" onclick="showUniSheet(${i})">
+  const c    = $(cid);
+  const unis = curStu.unis || Array(6).fill(null);
+  c.innerHTML = unis.map((u,i)=>{
+    if(u?.name) return `
+      <div class="slot-row filled" onclick="showUniSheet(${i})">
         <div class="slot-num" style="background:${SBGS[i]};color:${SCOLORS[i]}">${i+1}</div>
-        <div class="slot-info"><div class="slot-uni">${esc(u.name)}</div><div class="slot-dept">${esc(u.dept||'')}</div><div class="slot-type">${esc(u.type||'')}${u.subtype?' · '+esc(u.subtype):''}</div></div>
+        <div class="slot-info">
+          <div class="slot-uni">${esc(u.name)}</div>
+          <div class="slot-dept">${esc(u.dept||'')}</div>
+          <div class="slot-type">${esc(u.type||'')}${u.subtype?' · '+esc(u.subtype):''}</div>
+        </div>
         <span style="color:#d3d1c7;font-size:16px">›</span>
       </div>`;
-    }
-    return`<div class="slot-row" onclick="showUniSheet(${i})">
-      <div class="slot-num" style="background:${SBGS[i]};color:${SCOLORS[i]}">${i+1}</div>
-      <div class="slot-info"><div class="slot-empty">${SLABELS[i]} – 입력하기</div></div>
-      <span style="color:#d3d1c7;font-size:14px">+</span>
-    </div>`;
+    return `
+      <div class="slot-row" onclick="showUniSheet(${i})">
+        <div class="slot-num" style="background:${SBGS[i]};color:${SCOLORS[i]}">${i+1}</div>
+        <div class="slot-info"><div class="slot-empty">${SLABELS[i]} – 입력하기</div></div>
+        <span style="color:#d3d1c7;font-size:14px">+</span>
+      </div>`;
   }).join('');
 }
 
-function renderDUniDetail(){renderUniDetail('d-uni-detail');}
+function renderDUniDetail(){ renderUniDetail('d-uni-detail'); }
 
 function renderUniDetail(cid){
-  const c=$id(cid);
-  const unis=curStu.unis||[];
-  const filled=unis.filter(u=>u?.name);
-  if(!filled.length){c.innerHTML='';return;}
-  c.innerHTML='<div class="sec-lbl" style="margin-top:14px;margin-bottom:7px">상세 정보</div>'+
+  const c    = $(cid);
+  const unis = curStu.unis||[];
+  if(!unis.filter(u=>u?.name).length){ c.innerHTML=''; return; }
+  c.innerHTML = '<div class="sec-lbl" style="margin-top:14px;margin-bottom:7px">상세 정보</div>' +
     unis.map((u,i)=>{
-      if(!u?.name)return'';
-      return`<div class="uni-det" onclick="showUniSheet(${i})">
+      if(!u?.name) return '';
+      return `<div class="uni-det" onclick="showUniSheet(${i})">
         <div style="display:flex;justify-content:space-between;align-items:flex-start">
-          <div><span class="sbadge" style="background:${SBGS[i]};color:${SCOLORS[i]}">${SLABELS[i]}</span>
-          <h4>${esc(u.name)}</h4><div class="udept">${esc(u.dept||'')}</div></div>
+          <div>
+            <span class="sbadge" style="background:${SBGS[i]};color:${SCOLORS[i]}">${SLABELS[i]}</span>
+            <h4>${esc(u.name)}</h4>
+            <div class="udept">${esc(u.dept||'')}</div>
+          </div>
           <span style="color:#d3d1c7;font-size:18px">›</span>
         </div>
         <div class="g2">
@@ -784,132 +661,133 @@ function renderUniDetail(cid){
     }).join('');
 }
 
-function goBack(){renderStats();renderList();showScr('screen-teacher');}
-window.goBack=goBack;
+function goBack(){ renderStats(); renderList(); showScr('screen-teacher'); }
+window.goBack = goBack;
 
 function memoDebounce(){
   clearTimeout(memoT);
-  memoT=setTimeout(async()=>{
-    if(!curStu)return;
-    curStu.teacherMemo=$id('t-memo').value;
+  memoT = setTimeout(async()=>{
+    if(!curStu) return;
+    curStu.teacherMemo = $('t-memo').value;
     if(await saveToDb(curStu.id)){
-      const l=$id('memo-saved');l.classList.add('on');setTimeout(()=>l.classList.remove('on'),2000);
+      const l=$('memo-saved'); l.classList.add('on'); setTimeout(()=>l.classList.remove('on'),2000);
     }
-  },900);
+  }, 900);
 }
-window.memoDebounce=memoDebounce;
+window.memoDebounce = memoDebounce;
 
 /* ════ 학생 추가/수정 ════ */
 function showAddStu(){
-  editStu=false;
-  $id('ms-title').textContent='학생 추가';$id('ms-btn').textContent='저장';
-  ['a-name','a-id','a-pw','a-grade','a-mock'].forEach(id=>$id(id).value='');
-  $id('a-note').value='';$id('a-num').value='';$id('a-gender').value='';$id('a-track').value='';
-  $id('a-id').disabled=false;show('modal-stu');
+  editStu=false; $('ms-title').textContent='학생 추가'; $('ms-btn').textContent='저장';
+  ['a-name','a-id','a-pw','a-grade','a-mock'].forEach(id=>$(id).value='');
+  $('a-note').value=''; $('a-num').value=''; $('a-gender').value=''; $('a-track').value='';
+  $('a-id').disabled=false; show('modal-stu');
 }
-window.showAddStu=showAddStu;
+window.showAddStu = showAddStu;
 
 function showEditStu(){
-  editStu=true;$id('ms-title').textContent='정보 수정';$id('ms-btn').textContent='수정 저장';
+  editStu=true; $('ms-title').textContent='정보 수정'; $('ms-btn').textContent='수정 저장';
   const s=curStu;
-  $id('a-name').value=s.name||'';$id('a-id').value=s.id||'';$id('a-id').disabled=true;
-  $id('a-num').value=s.num||'';$id('a-gender').value=s.gender||'';$id('a-pw').value=s.pw||'';
-  $id('a-grade').value=s.grade||'';$id('a-track').value=s.track||'';
-  $id('a-mock').value=s.mock||'';$id('a-note').value=s.note||'';show('modal-stu');
+  $('a-name').value=s.name||''; $('a-id').value=s.id||''; $('a-id').disabled=true;
+  $('a-num').value=s.num||''; $('a-gender').value=s.gender||''; $('a-pw').value=s.pw||'';
+  $('a-grade').value=s.grade||''; $('a-track').value=s.track||'';
+  $('a-mock').value=s.mock||''; $('a-note').value=s.note||''; show('modal-stu');
 }
-window.showEditStu=showEditStu;
+window.showEditStu = showEditStu;
 
 async function saveStu(){
-  const name=$id('a-name').value.trim(),sid=$id('a-id').value.trim();
-  if(!name||!sid){toast('❌ 이름과 학번은 필수');return;}
-  if(!editStu&&students[sid]){toast('❌ 이미 존재하는 학번');return;}
-  const pw=$id('a-pw').value.trim()||sid;
-  const data={name,id:sid,pw,num:$id('a-num').value||null,gender:$id('a-gender').value,track:$id('a-track').value,grade:$id('a-grade').value,mock:$id('a-mock').value.trim(),note:$id('a-note').value.trim()};
-  if(editStu){Object.assign(curStu,data);if(await saveToDb(sid)){closeM('modal-stu');renderDInfo();}}
-  else{students[sid]={...data,unis:Array(6).fill(null),teacherMemo:'',ownMemo:''};if(await saveToDb(sid)){closeM('modal-stu');renderStats();renderList();}}
+  const name=$('a-name').value.trim(), sid=$('a-id').value.trim();
+  if(!name||!sid){ toast('❌ 이름과 학번은 필수'); return; }
+  if(!editStu&&students[sid]){ toast('❌ 이미 존재하는 학번'); return; }
+  const pw=$('a-pw').value.trim()||sid;
+  const data={name,id:sid,pw,num:$('a-num').value||null,gender:$('a-gender').value,
+    track:$('a-track').value,grade:$('a-grade').value,mock:$('a-mock').value.trim(),note:$('a-note').value.trim()};
+  if(editStu){ Object.assign(curStu,data); if(await saveToDb(sid)){ closeM('modal-stu'); renderDInfo(); } }
+  else { students[sid]={...data,unis:Array(6).fill(null),teacherMemo:'',ownMemo:''}; if(await saveToDb(sid)){ closeM('modal-stu'); renderStats(); renderList(); } }
 }
-window.saveStu=saveStu;
+window.saveStu = saveStu;
 
 async function delStu(){
-  if(!confirm(curStu.name+' 학생을 삭제할까요?\nFirebase에서 모든 데이터가 삭제됩니다.'))return;
+  if(!confirm(curStu.name+' 학생을 삭제할까요?\nFirebase에서 모든 데이터가 삭제됩니다.')) return;
   try{
-    await dbSet(dbRef(db,'students/'+curStu.id),null);
-    delete students[curStu.id];goBack();toast('✅ 삭제됨');
-  }catch(e){toast('❌ 삭제 실패');}
+    await set(ref(db,'students/'+curStu.id), null);
+    delete students[curStu.id]; goBack(); toast('✅ 삭제됨');
+  } catch(e){ toast('❌ 삭제 실패'); }
 }
-window.delStu=delStu;
+window.delStu = delStu;
 
 /* ════ 대학 입력 ════ */
 function showUniSheet(idx){
-  curSlot=idx!==null?idx:0;
+  curSlot = idx!==null ? idx : 0;
   document.querySelectorAll('#slot-tabs .stab').forEach((t,i)=>t.classList.toggle('on',i===curSlot));
-  $id('mu-title').textContent=(curSlot+1)+'번 대학 입력';
-  loadUniFields(curStu.unis?.[curSlot]);show('modal-uni');
+  $('mu-title').textContent = (curSlot+1)+'번 대학 입력';
+  loadUniFields(curStu.unis?.[curSlot]); show('modal-uni');
 }
-window.showUniSheet=showUniSheet;
+window.showUniSheet = showUniSheet;
 
 function loadUniFields(u){
   if(u?.name){
-    $id('u-name').value=u.name||'';$id('u-dept').value=u.dept||'';
-    $id('u-type').value=u.type||'';$id('u-sub').value=u.subtype||'';
-    $id('u-aname').value=u.admissionName||'';$id('u-quota').value=u.quota||'';
-    $id('u-ratio').value=u.ratio||'';$id('u-cut').value=u.cut||'';
-    $id('u-cmin').value=u.cmin||'';$id('u-cstd').value=u.cstd||'';
-    $id('u-eval').value=u.eval||'';$id('u-period').value=u.period||'';
-    $id('u-ann').value=u.ann||'';$id('u-memo').value=u.memo||'';show('u-del');
+    $('u-name').value=u.name||''; $('u-dept').value=u.dept||'';
+    $('u-type').value=u.type||''; $('u-sub').value=u.subtype||'';
+    $('u-aname').value=u.admissionName||''; $('u-quota').value=u.quota||'';
+    $('u-ratio').value=u.ratio||''; $('u-cut').value=u.cut||'';
+    $('u-cmin').value=u.cmin||''; $('u-cstd').value=u.cstd||'';
+    $('u-eval').value=u.eval||''; $('u-period').value=u.period||'';
+    $('u-ann').value=u.ann||''; $('u-memo').value=u.memo||''; show('u-del');
   } else {
-    ['u-name','u-dept','u-aname','u-quota','u-ratio','u-cut','u-cstd','u-period','u-ann','u-eval','u-memo'].forEach(id=>$id(id).value='');
-    $id('u-type').value='';$id('u-sub').value='';$id('u-cmin').value='';hide('u-del');
+    ['u-name','u-dept','u-aname','u-quota','u-ratio','u-cut','u-cstd','u-period','u-ann','u-eval','u-memo']
+      .forEach(id=>$(id).value='');
+    $('u-type').value=''; $('u-sub').value=''; $('u-cmin').value=''; hide('u-del');
   }
 }
 
 function selSlot(i,el){
   curSlot=i;
-  document.querySelectorAll('#slot-tabs .stab').forEach(t=>t.classList.remove('on'));el.classList.add('on');
-  $id('mu-title').textContent=(i+1)+'번 대학 입력';loadUniFields(curStu.unis?.[i]);
+  document.querySelectorAll('#slot-tabs .stab').forEach(t=>t.classList.remove('on')); el.classList.add('on');
+  $('mu-title').textContent=(i+1)+'번 대학 입력'; loadUniFields(curStu.unis?.[i]);
 }
-window.selSlot=selSlot;
+window.selSlot = selSlot;
 
 async function saveUni(){
-  const name=$id('u-name').value.trim();if(!name){toast('❌ 대학명을 입력하세요');return;}
-  if(!curStu.unis)curStu.unis=Array(6).fill(null);
+  const name=$('u-name').value.trim(); if(!name){ toast('❌ 대학명을 입력하세요'); return; }
+  if(!curStu.unis) curStu.unis=Array(6).fill(null);
   curStu.unis[curSlot]={
-    name,dept:$id('u-dept').value.trim(),type:$id('u-type').value,subtype:$id('u-sub').value,
-    admissionName:$id('u-aname').value.trim(),quota:$id('u-quota').value,ratio:$id('u-ratio').value.trim(),
-    cut:$id('u-cut').value.trim(),cmin:$id('u-cmin').value,cstd:$id('u-cstd').value.trim(),
-    eval:$id('u-eval').value.trim(),period:$id('u-period').value.trim(),ann:$id('u-ann').value.trim(),
-    memo:$id('u-memo').value.trim()
+    name, dept:$('u-dept').value.trim(), type:$('u-type').value, subtype:$('u-sub').value,
+    admissionName:$('u-aname').value.trim(), quota:$('u-quota').value, ratio:$('u-ratio').value.trim(),
+    cut:$('u-cut').value.trim(), cmin:$('u-cmin').value, cstd:$('u-cstd').value.trim(),
+    eval:$('u-eval').value.trim(), period:$('u-period').value.trim(), ann:$('u-ann').value.trim(),
+    memo:$('u-memo').value.trim()
   };
   if(await saveToDb(curStu.id)){
     closeM('modal-uni');
-    if(role==='teacher'){renderDSlots();renderDUniDetail();renderStats();}
-    else{renderSlotList('s-slots');renderUniDetail('s-uni-detail');}
+    if(role==='teacher'){ renderDSlots(); renderDUniDetail(); renderStats(); }
+    else { renderSlotList('s-slots'); renderUniDetail('s-uni-detail'); }
   }
 }
-window.saveUni=saveUni;
+window.saveUni = saveUni;
 
 async function delUni(){
-  if(!confirm('이 정보를 삭제할까요?'))return;
+  if(!confirm('이 정보를 삭제할까요?')) return;
   curStu.unis[curSlot]=null;
   if(await saveToDb(curStu.id)){
     closeM('modal-uni');
-    if(role==='teacher'){renderDSlots();renderDUniDetail();renderStats();}
-    else{renderSlotList('s-slots');renderUniDetail('s-uni-detail');}
+    if(role==='teacher'){ renderDSlots(); renderDUniDetail(); renderStats(); }
+    else { renderSlotList('s-slots'); renderUniDetail('s-uni-detail'); }
   }
 }
-window.delUni=delUni;
+window.delUni = delUni;
 
 /* ════ 학생 화면 ════ */
 function showStudentScr(){
   const s=curStu;
-  $id('s-name').textContent=s.name+' 학생';
-  $id('s-meta').textContent=s.id+(s.grade?' · 내신 '+s.grade+'등급':'')+(s.track?' · '+s.track:'');
-  renderSlotList('s-slots');renderUniDetail('s-uni-detail');
-  const tm=$id('s-tmemo');
-  tm.textContent=s.teacherMemo?.trim()?s.teacherMemo:'(담임 상담 메모 없음)';
-  tm.style.color=s.teacherMemo?.trim()?'var(--ink)':'#888780';
-  $id('s-omemo').value=s.ownMemo||'';
-  $id('s-pinfo').innerHTML=`
+  $('s-name').textContent = s.name+' 학생';
+  $('s-meta').textContent = s.id+(s.grade?' · 내신 '+s.grade+'등급':'')+(s.track?' · '+s.track:'');
+  renderSlotList('s-slots'); renderUniDetail('s-uni-detail');
+  const tm=$('s-tmemo');
+  tm.textContent = s.teacherMemo?.trim() ? s.teacherMemo : '(담임 상담 메모 없음)';
+  tm.style.color = s.teacherMemo?.trim() ? 'var(--ink)' : '#888780';
+  $('s-omemo').value = s.ownMemo||'';
+  $('s-pinfo').innerHTML=`
     <div class="irow"><span class="ikey">이름</span><span class="ival">${esc(s.name)}</span></div>
     <div class="irow"><span class="ikey">학번</span><span class="ival">${s.id}</span></div>
     ${s.num?`<div class="irow"><span class="ikey">번호</span><span class="ival">${s.num}번</span></div>`:''}
@@ -917,61 +795,66 @@ function showStudentScr(){
     ${s.track?`<div class="irow"><span class="ikey">계열</span><span class="ival">${s.track}</span></div>`:''}
     ${s.grade?`<div class="irow"><span class="ikey">내신</span><span class="ival">${s.grade}등급</span></div>`:''}
     ${s.mock?`<div class="irow"><span class="ikey">모의고사</span><span class="ival">${esc(s.mock)}</span></div>`:''}`;
-  swSTab('unis',document.querySelector('#screen-student .tab-btn'));
+  swSTab('unis', document.querySelector('#screen-student .tab-btn'));
   showScr('screen-student');
 }
 
 function swSTab(t,el){
-  document.querySelectorAll('#screen-student .tab-btn').forEach(b=>b.classList.remove('on'));el.classList.add('on');
-  hide('st-unis');hide('st-memo');hide('st-profile');show('st-'+t);
+  document.querySelectorAll('#screen-student .tab-btn').forEach(b=>b.classList.remove('on')); el.classList.add('on');
+  hide('st-unis'); hide('st-memo'); hide('st-profile'); show('st-'+t);
 }
-window.swSTab=swSTab;
+window.swSTab = swSTab;
 
 function sMemoDebounce(){
   clearTimeout(sMemoT);
-  sMemoT=setTimeout(async()=>{
-    if(!curStu)return;
-    curStu.ownMemo=$id('s-omemo').value;
+  sMemoT = setTimeout(async()=>{
+    if(!curStu) return;
+    curStu.ownMemo = $('s-omemo').value;
     if(await saveToDb(curStu.id)){
-      const l=$id('smemo-saved');l.classList.add('on');setTimeout(()=>l.classList.remove('on'),2000);
+      const l=$('smemo-saved'); l.classList.add('on'); setTimeout(()=>l.classList.remove('on'),2000);
     }
-  },900);
+  }, 900);
 }
-window.sMemoDebounce=sMemoDebounce;
+window.sMemoDebounce = sMemoDebounce;
 
 /* ════ 설정 ════ */
 async function changePw(){
-  const c=$id('pc').value,n=$id('pn').value,f=$id('pf').value;
-  if(c!==teacherPw){toast('❌ 현재 비밀번호 오류');return;}
-  if(n.length<4){toast('❌ 4자 이상 입력하세요');return;}
-  if(n!==f){toast('❌ 비밀번호 불일치');return;}
-  teacherPw=n;await savePwDb();
-  ['pc','pn','pf'].forEach(id=>$id(id).value='');toast('✅ 비밀번호 변경됨');
+  const c=$('pc').value, n=$('pn').value, f=$('pf').value;
+  if(c!==teacherPw){ toast('❌ 현재 비밀번호 오류'); return; }
+  if(n.length<4){ toast('❌ 4자 이상 입력하세요'); return; }
+  if(n!==f){ toast('❌ 비밀번호 불일치'); return; }
+  teacherPw=n; await savePwDb();
+  ['pc','pn','pf'].forEach(id=>$(id).value=''); toast('✅ 비밀번호 변경됨');
 }
-window.changePw=changePw;
+window.changePw = changePw;
 
 async function bulkPw(){
-  const fmt=$id('pw-fmt').value,cv=$id('pw-cv').value.trim();
-  if(fmt==='custom'&&!cv){toast('❌ 비밀번호를 입력하세요');return;}
-  Object.values(students).forEach(s=>{s.pw=fmt==='id'?s.id:cv;});
-  try{await dbSet(dbRef(db,'students'),students);toast('✅ 전체 비밀번호 설정 완료');}
-  catch(e){toast('❌ 저장 실패');}
+  const fmt=$('pw-fmt').value, cv=$('pw-cv').value.trim();
+  if(fmt==='custom'&&!cv){ toast('❌ 비밀번호를 입력하세요'); return; }
+  Object.values(students).forEach(s=>{ s.pw = fmt==='id' ? s.id : cv; });
+  try{ await set(ref(db,'students'), students); toast('✅ 전체 비밀번호 설정 완료'); }
+  catch(e){ toast('❌ 저장 실패'); }
 }
-window.bulkPw=bulkPw;
+window.bulkPw = bulkPw;
 
 function exportAll(){
-  const d=JSON.stringify({exportedAt:new Date().toISOString(),teacherPw,students},null,2);
-  const b=new Blob([d],{type:'application/json'});
-  const u=URL.createObjectURL(b);
-  const a=document.createElement('a');a.href=u;a.download='3학년8반_진학상담_'+new Date().toISOString().slice(0,10)+'.json';a.click();
-  URL.revokeObjectURL(u);toast('✅ 내보내기 완료');
+  const d = JSON.stringify({exportedAt:new Date().toISOString(), teacherPw, students}, null, 2);
+  const b = new Blob([d],{type:'application/json'});
+  const u = URL.createObjectURL(b);
+  const a = document.createElement('a');
+  a.href=u; a.download='3학년8반_진학상담_'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+  URL.revokeObjectURL(u); toast('✅ 내보내기 완료');
 }
-window.exportAll=exportAll;
+window.exportAll = exportAll;
 
-/* 키보드 */
-$id('tpw').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
-$id('spw').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
-$id('sid').addEventListener('keydown',e=>{if(e.key==='Enter')$id('spw').focus();});
+/* ─── 키보드 ─── */
+$('tpw').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
+$('spw').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
+$('sid').addEventListener('keydown', e=>{ if(e.key==='Enter') $('spw').focus(); });
+
+/* ─── 전역 노출 ─── */
+window.closeM  = closeM;
+window.ovClose = ovClose;
 </script>
 </body>
 </html>
